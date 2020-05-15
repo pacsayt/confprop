@@ -10,8 +10,11 @@ public class PropertyKiiroKomponens
 {
   private static final Logger LOG = LoggerFactory.getLogger( PropertyKiiroKomponens.class);
 
-  public PropertyKiiroKomponens( ConfigProperties iniConfigProperties, ConfigItem configItem)
+  public PropertyKiiroKomponens( ConfigProperties iniConfigProperties, ConfigItem configItem, Employee employee, ProjectInfoConfigItem projectInfoConfigItem)
   {
-    LOG.info( "PropertyKiiroKomponens() : iniConfigProperties=" + iniConfigProperties + " ConfigItem=" + configItem);
+    LOG.info( "PropertyKiiroKomponens() : iniConfigProperties=" + iniConfigProperties +
+                                                 " ConfigItem=" + configItem +
+                                                   " Employee=" + employee +
+                                      " ProjectInfoConfigItem=" + projectInfoConfigItem);
   }
 }

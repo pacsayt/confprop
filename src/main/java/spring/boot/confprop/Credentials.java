@@ -1,5 +1,9 @@
 package spring.boot.confprop;
 
+/**
+ * Ez a ConfigProperties resze.
+ */
+
 public class Credentials
 {
   private String authMethod;
@@ -13,9 +17,9 @@ public class Credentials
     return authMethod;
   }
 
-  public void setAuthMethod(String authMethod)
+  public void setAuthMethod(String iniAuthMethod)
   {
-    this.authMethod = authMethod;
+    authMethod = iniAuthMethod;
   }
 
   public String getUsername()
@@ -23,9 +27,9 @@ public class Credentials
     return username;
   }
 
-  public void setUsername(String username)
+  public void setUsername(String iniUsername)
   {
-    this.username = username;
+    username = iniUsername;
   }
 
   public String getPassword()
@@ -33,9 +37,9 @@ public class Credentials
     return password;
   }
 
-  public void setPassword(String password)
+  public void setPassword(String iniPassword)
   {
-    this.password = password;
+    password = iniPassword;
   }
 
   @Override

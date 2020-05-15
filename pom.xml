@@ -16,6 +16,7 @@
 
 	<properties>
 		<java.version>11</java.version>
+		<custom.property>This is a custom property</custom.property>
 	</properties>
 
 	<dependencies>
