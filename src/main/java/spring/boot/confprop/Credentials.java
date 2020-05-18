@@ -47,4 +47,29 @@ public class Credentials
   {
     return "Credentials{ authMethod=" + authMethod + " username=" + username + " password=" + password + "}";
   }
+
+  @Override
+  public boolean equals(Object obj)
+  {
+    if ( obj == null )
+    {
+      return false;
+    }
+
+    if ( ! (obj instanceof Credentials) )
+    {
+      return false;
+    }
+
+    Credentials otherCredentials = (Credentials) obj;
+
+    if ( !authMethod.equals( otherCredentials.getAuthMethod()) ||
+         !username.equals( otherCredentials.getUsername()) ||
+         !password.equals( otherCredentials.getPassword()) )
+    {
+      return false;
+    }
+
+    return true;
+  }
 }

@@ -14,6 +14,9 @@ import org.springframework.context.annotation.Bean;
  * If we don't use @Configuration in the POJO,
  * then we need to add @EnableConfigurationProperties(ConfigProperties.class)
  * in the main Spring application class to bind the properties into the POJO :
+ *
+ *  Properties with Spring and Spring Boot
+ *  https://www.baeldung.com/properties-with-spring
  */
 @SpringBootApplication
 @ConfigurationPropertiesScan("spring.boot.confprop")   // ide korlatozza a keresest
