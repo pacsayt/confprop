@@ -13,7 +13,7 @@ import org.springframework.context.annotation.PropertySources;
  * @PropertySource({ "classpath:persistence-${envTarget:mysql}.properties" })
  */
 
-@Configuration // S.B. 2.2-tol nem kell
+@Configuration // S.B. 2.2-tol nem kell (lof*t nem ...)
 //@PropertySource( "classpath:secondapplication.properties") // in the event of a property name collision,
 //@PropertySource( "classpath:thirdapplication.properties")  // the last source read takes precedence.
 @PropertySources({ // nemcsak Java 8 utan
